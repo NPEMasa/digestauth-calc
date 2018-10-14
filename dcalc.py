@@ -17,10 +17,10 @@ class digestauth():
 | Command Usage          |
 +------------------------+
 -v  : This Program Version
--h  : This help 
+-h  : This help
 
 +A1 Calc Mode+
--a1 : Calculate A1 of Digest Authentication. 
+-a1 : Calculate A1 of Digest Authentication.
       The needed parameter is <username>, <passwd>,
       <config-file-path>.
 
@@ -342,7 +342,6 @@ def main():
     d = digestauth()
     if sys.argv[1] == "-a1":
         d.a1calc()
-        #print (d.res_txt.encode('utf-8'))
 
     elif sys.argv[1] == "-a2":
         d.a2calc()
